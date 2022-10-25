@@ -3,7 +3,7 @@
 
 //WIFI
 #include <WiFiNINA.h>
-#include "wifi_credentials.h"
+#include "salaiset_kansiot.h"
 
 char ssid[] = SECRET_SSID;                // your network SSID (name)
 char pass[] = SECRET_PASS;                // your network password (use for WPA, or use as key for WEP)
@@ -62,8 +62,7 @@ void setup() {
 
     // wait 10 seconds for connection:
     delay(10000);
-
-}
+    }
 }
 
 void loop() {
@@ -133,7 +132,7 @@ void loop() {
       Serial.println("Failed to read from DHT");
       return;
   } else {
-    if ((t >= 20) || (t <= 24)) {
+    if ((t >= 21) || (t <= 24)) {
       //tyhjennä ruutu
       display.clearDisplay();
       //aseta teksti paikkaan
