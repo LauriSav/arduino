@@ -38,7 +38,7 @@ void setup() {
 
     display.clearDisplay();
     display.setCursor(0, 15);
-    display.print("Hellurei!");
+    display.print("terve");
 
     display.display();
     delay(1);
